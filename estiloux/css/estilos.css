@@ -5,20 +5,24 @@
      box-sizing: border-box;
  }
 
- body, html {
+ body,
+ html {
      height: 100%;
-     border: 2px solid red;
-    }
-    body{
+     /* border: 2px solid red; */
+ }
+
+ body {
      background-color: #efefef;
-     border: 2px solid blue;
+     /* border: 2px solid blue; */
 
  }
+
  /* **********Header*********** */
 
- header, footer {
+ header,
+ footer {
      width: 100%;
-     height: 10%;   
+     height: 10%;
      background-color: #393939;
  }
 
@@ -27,8 +31,9 @@
      font-size: 30px;
      font-weight: 400px;
      color: white;
-     /* margin-left: 15px; */
      font-weight: 400;
+
+     /* margin-left: 15px; */
  }
 
  /* caixa para centralizar o conteúdo*/
@@ -37,6 +42,7 @@
      height: 100%;
      max-width: 992px;
      margin: 0 auto;
+
      /* border: 1px solid purple;  */
  }
 
@@ -47,12 +53,13 @@
  }
 
  nav {
-     width: 400px;
+     width: 300px;
      height: 100%;
-     /* border: 3px solid white; */
      display: flex;
      justify-content: space-around;
      align-items: center;
+
+     /* border: 3px solid white; */
  }
 
  nav a {
@@ -92,35 +99,124 @@
  main {
      width: 100%;
      height: 80%;
-     border: 2px solid red;
-
-     display: flex;
-     justify-content: space-between;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     /* border: 3px solid red; */
  }
 
  .main-flex {
-     border: 2px solid green;
-     
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-
      width: 100%;
      height: 100%;
+
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+     /* border: 2px solid green; */
  }
 
  .harmonia {
-     border: 2px solid blue;
      width: 700px;
-     height: 500px;
-     margin: 10px;
+     height: 100%;
+     background-color: white;
+     overflow: auto;
+     padding-bottom: 20px;
+
+     /* margin: 10px;
+     border: 2px solid blue; */
+ }
+
+ .harmonia img {
+     width: 100%;
+ }
+
+ .harmonia h2 {
+     margin-top: 25px;
+     margin-left: 20px;
+     margin-right: 20px;
+
+     font-family: system-ui, -apple-system, sans-serif;
+     color: #504c4c;
+     font-size: 16px;
+     font-weight: 400;
+    }
+    
+    .harmonia p {
+        
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        /* padding-bottom: 20px; */
+        
+        font-family: system-ui, -apple-system, sans-serif;
+        color: #504c4c;
+        font-size: 16px;
+        font-weight: 400;
+
  }
 
  aside {
-     border: 2px solid purple;
-     width: 300px;
-     height: 500px;
-     margin: 10px;
+     width: 250px;
+     height: 100%;
+
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     /* margin: 10px; 
+     border: 2px solid purple; */
+    }
+    aside article{
+        background-color: white;
+ }
+ aside article h3{
+    width: 100%;
+    color: #aBaBaB;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid black;
+ }
+ aside article ul {
+    color: #504c4c;
+    margin-top: 20pxf;
+     margin-left: 25px;
+     margin-right: 10px;
 
  }
- 
+ aside article input, aside article button {
+    height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+ aside article input{
+    border: 1px solid #aBaBaB;
+    outline: none;
+    padding-right: 5px;
+    padding-left: 5px;
+ }
+ aside article button {
+    width: 30px;
+    background-color: #727272;
+    color: white;
+    border: none;
+    border: 1px solid #727272;
+    cursor: pointer;
+ }
+aside .buscar-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    cursor: a;
+}
+.posts{
+    width: 100%;
+    height: 200px;
+}
+ .inss{
+    height: 200px;
+ }
+
+ /********* Footer *********/
+ footer {
+     color: white;
+ }
